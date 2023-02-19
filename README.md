@@ -36,5 +36,5 @@ On Web applications it is implemented using ***Google reCAPTCHA*** which is auto
 
 ## Implementations
 
-1. [firebase-auth-server-version](https://github.com/S-Cesc/firebase-auth-server-version): Express node (javascript) server implementation.
-2. [firebase-auth-serverless-version](https://github.com/S-Cesc/firebase-auth-client-version): Browser only (javascript) implementation.
+1. [firebase-auth-serverless-version](https://github.com/S-Cesc/firebase-auth-client-version): Browser only (javascript) implementation.
+2. [firebase-auth-server-version](https://github.com/S-Cesc/firebase-auth-server-version): Express node (javascript) server implementation.
