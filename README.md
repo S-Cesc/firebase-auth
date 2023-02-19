@@ -4,8 +4,8 @@ Use of Firebase Auth facilities
 
 ## Authentication and Authorization
 
-- Authentication is the process of verifying who a user is.
-- Authorization is the process of verifying what a user can access.
+- **Authentication** is the process of verifying who a user is.
+- **Authorization** is the process of verifying what a user can access.
 
 ### Authentication using Firebase
 
@@ -18,7 +18,7 @@ Use of Firebase Auth facilities
 
 ## Security Rules
 
- Security Rules are used by ***Cloud Firestore***, *Cloud Storage for Firebase*, and the *Realtime Database* to perform **authorization**; they determine if a user can perform a given ***read*** or ***write***.
+ Security Rules are used by ***Cloud Firestore***, ***Cloud Storage for Firebase***, and the ***Realtime Database*** to **perform authorization**; they determine if a user can perform a given ***read*** or ***write***.
 
 ### The admin Web API
 
@@ -26,15 +26,15 @@ The *admin SDK* bypasses *Firebase Security Rules* and should only be used from 
 
 It depends on a ***secret key*** for the *web app's Firebase configuration*, and it must remain secret. So its only useful to be used **server side**, but **never on public code web servers**.
 
-It is **very important**, as the ***admin SDK* bypasses *Firebase Security Rules***.
+It is **very important**, as the ***admin SDK* bypasses *Firebase Security Rules***; so, it must be used very carefully.
 
 ## App Check
 
-*App Check* verifies that a request originated from your app and blocks all other requests to backend resources.
+*App Check* verifies that a request originated from your app and blocks all other requests to backend resources. It can be used to protect ***Firebase APIs*** and ***API endpoints on your own server***.
 
-*App Check* can be used to protect ***Firebase APIs*** and ***API endpoints on your own server***. On Web applications it is implemented using ***Google reCAPTCHA*** which is automatically managed by the *Firebase API*.
+On Web applications it is implemented using ***Google reCAPTCHA*** which is automatically managed by the *Firebase API*.
 
 ## Implementations
 
 1. [firebase-auth-server-version](https://github.com/S-Cesc/firebase-auth-server-version): Express node (javascript) server implementation.
-2. [firebase-auth-serverless-version](https://github.com/S-Cesc/firebase-auth): Browser only (javascript) implementation.
+2. [firebase-auth-serverless-version](https://github.com/S-Cesc/firebase-auth-client-version): Browser only (javascript) implementation.
