@@ -14,7 +14,7 @@ Use of Firebase Auth facilities
     - There are also available other providers, like ***Yahoo*** (*OAuth*), ***iPhone*** (*OAuth 2.0*) or ***Microsoft*** (both *Azure Active Directory* and *personal Microsoft accounts*).
   - Moreover, ***custom*** and ***phone number*** authentications are also possible, as well as ***anonymous accounts*** which can be transformed into *authenticated user accounts*.
     - The *anonymous accounts* are a very powerful feature.
-  - This software now only uses firebase own authentication system, but in the future it could be expanded for other authentication systems.
+  - This software now only uses *firebase own authentication system*, but in the future it could be expanded for other authentication systems.
 
 ## Security Rules
 
@@ -30,3 +30,11 @@ It is **very important**, as the ***admin SDK* bypasses *Firebase Security Rules
 
 ## App Check
 
+*App Check* verifies that a request originated from your app and blocks all other requests to backend resources.
+
+*App Check* can be used to protect ***Firebase APIs*** and ***API endpoints on your own server***. On Web applications it is implemented using ***Google reCAPTCHA*** which is automatically managed by the *Firebase API*.
+
+## Implementations
+
+1. [firebase-auth-server-version](https://github.com/S-Cesc/firebase-auth-server-version): Express node (javascript) server implementation.
+2. [firebase-auth-serverless-version](https://github.com/S-Cesc/firebase-auth): Browser only (javascript) implementation.
