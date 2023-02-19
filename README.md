@@ -12,8 +12,9 @@ Use of Firebase Auth facilities
   - Firebase has its own ***email* and *password*** authentication system.
   - Firebase also has a ***federated identity provider integration***, allowing users to sign in with their ***Google***, ***Facebook***, ***Twitter***, and ***GitHub*** accounts.
     - There are also available other providers, like ***Yahoo*** (*OAuth*), ***iPhone*** (*OAuth 2.0*) or ***Microsoft*** (both *Azure Active Directory* and *personal Microsoft accounts*).
-  - Moreover, *custom* and *phone number* authentications are also possible, as well as *anonymous accounts* which can be transformed into *authenticated user accounts*.
-  - This software now only uses firebase own authentication system, but may be it could be expanded in the future for other authentication systems. *Google*, *Yahoo* and also *iPhone* are the most rellevant ones, but *anonymous accounts* are a very powerful feature to take into account.
+  - Moreover, ***custom*** and ***phone number*** authentications are also possible, as well as ***anonymous accounts*** which can be transformed into *authenticated user accounts*.
+    - The *anonymous accounts* are a very powerful feature.
+  - This software now only uses firebase own authentication system, but in the future it could be expanded for other authentication systems.
 
 ## Security Rules
 
